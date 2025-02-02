@@ -1,22 +1,38 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    char codigo[5], nomecid[50], nomeest[50];
+    int populacao, area, pib, pturisticos;
+
+    printf("Digite o codigo da carta\n");
+    scanf("%d", &codigo);
+
+    printf("Digite o nome do estado\n");
+    scanf("%s", &nomeest);
+
+    printf("Digite o nome da cidade\n");
+    scanf("%s", &nomecid);
+
+    printf("Digite a população da cidade\n");
+    scanf("%d", &populacao);
+
+    printf("Digite a area da cidade\n");
+    scanf("%d", &area);
+
+    printf("Digite o PIB da cidade\n");
+    scanf("%d", &pib);
+
+    printf("Digite o número de pontos turísticos\n");
+    scanf("%d", &pturisticos);
+
+    printf("\nAqui está os dados sobre a carta cadastrada:\n Código da carta: %s\n", codigo);
+    printf("\nEstado: %s\n", nomeest);
+    printf("\nCidade: %s\n", nomecid);
+    printf("\nPopulação: %d\n", populacao);
+    printf("\nÁrea: %d\n", area);
+    printf("\nPIB: %d\n", pib);
+    printf("\nPontos turísticos: %d\n", pturisticos);
 
     return 0;
 }
